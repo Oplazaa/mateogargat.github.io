@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garonn'Hack Première Place</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Palette de couleurs et variables CSS */
+        :root {
+            --bg-color: #fdf4ed;        /* Couleur de fond globale */
+            --card-bg-color: #fff8f5;   /* Couleur de fond des sections ou cartes */
+            --accent-color: #fa795e;    /* Couleur d'accent (titres, soulignements) */
+            --text-color: #343a40;      /* Couleur principale du texte */
+            --hover-color: #da5e43;     /* Couleur au survol */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Section principale */
+        .project-section {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 2rem;
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .image-side img {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .desc-side {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        /* Titres de section */
+        .section-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Liste de services / compétences */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .services-list span {
+            position: relative;
+            color: var(--accent-color);
+            padding-bottom: 2px;
+        }
+
+        .services-list span::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70%;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        /* Lien de retour vertical */
+        .return-link {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            position: fixed;
+            left: 0;
+            top: 30%;
+            color: var(--accent-color);
+            text-decoration: none;
+            padding: 0.5rem;
+            background-color: var(--bg-color);
+            border-radius: 0 4px 4px 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .return-link:hover {
+            color: var(--hover-color);
+            background-color: #fff;
+        }
+
+        /* Galerie d'images additionnelles */
+        .img-fluid.rounded {
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Petits ajustements de texte */
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Lien pour revenir à l'accueil ou au portfolio -->
+<a href="\untitled2\index.php" class="return-link">Voir le site / Retour</a>
+
+<div class="container py-5">
+    <!-- Section principale : image et description -->
+    <div class="project-section mb-5">
+        <!-- Image à gauche -->
+        <div class="image-side col-lg-5 col-md-6 col-12 p-0">
+            <img src="\Images\Screenshot 2025-02-26 233239.png" alt="Garonn'Hack Image 1" class="img-fluid">
+        </div>
+
+        <!-- Contenu à droite -->
+        <div class="desc-side col-lg-6 col-md-6 col-12 p-4">
+            <h2 class="section-title">Le Garonn'Hack</h2>
+            <p>
+                <strong>Garonn'Hack</strong> est un hackathon de cybersécurité sous forme de CTF (Capture The Flag).
+                Nous y avons participé pour relever une série de défis techniques portant sur l’exploitation de failles,
+                l’analyse de vulnérabilités et l’exfiltration de données. L’objectif était de faire preuve de
+                créativité et de réactivité pour remporter la première place.
+            </p>
+            <p>
+                Ce projet met en pratique des compétences en sécurité informatique, programmation, et travail d’équipe
+                sous pression. La victoire au Garonn'Hack a confirmé la pertinence de nos choix techniques et
+                l’expertise de l’équipe.
+            </p>
+            <div class="services-list">
+                <span>Analyse</span>
+                <span>Cybersécurité</span>
+                <span>Recherche de vulnérabilités</span>
+                <span>Collaboration</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galerie additionnelle : deux images -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-6">
+            <img src="\Images\Screenshot 2025-02-26 233601.png" alt="Garonn'Hack Screenshot 2" class="img-fluid rounded">
+        </div>
+        <!-- Tu peux ajouter une deuxième image ou laisser l'espace vide si tu le souhaites -->
+        <!--
+        <div class="col-md-6">
+          <img src="another-image.png" alt="Another Garonn'Hack Screenshot" class="img-fluid rounded">
+        </div>
+        -->
+    </div>
+
+    <!-- Accompagnement et historique du projet -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="section-title">Accompagnement</h2>
+            <p>
+                Nous avons préparé cet événement en amont en nous familiarisant avec différents outils
+                de pentesting, de forensic et d’analyse de trafic réseau.
+                Nous nous sommes entrainé sur des sites de CTF comme picoCTF, RootMe, etc. Chaque membre de l’équipe a pu
+                se spécialiser dans un type de défi afin de maximiser nos chances de réussite.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

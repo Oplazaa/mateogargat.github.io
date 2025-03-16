@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techday 3 fois Première Place</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Palette de couleurs et variables CSS */
+        :root {
+            --bg-color: #fdf4ed;        /* Couleur de fond globale */
+            --card-bg-color: #fff8f5;   /* Couleur de fond des sections ou cartes */
+            --accent-color: #fa795e;    /* Couleur d'accent (titres, soulignements) */
+            --text-color: #343a40;      /* Couleur principale du texte */
+            --hover-color: #da5e43;     /* Couleur au survol */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Section principale */
+        .project-section {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 2rem;
+            background-color: var(--card-bg-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .image-side img {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .desc-side {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        /* Titres de section */
+        .section-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Liste de services / compétences */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .services-list span {
+            position: relative;
+            color: var(--accent-color);
+            padding-bottom: 2px;
+        }
+
+        .services-list span::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 70%;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        /* Lien de retour vertical */
+        .return-link {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            position: fixed;
+            left: 0;
+            top: 30%;
+            color: var(--accent-color);
+            text-decoration: none;
+            padding: 0.5rem;
+            background-color: var(--bg-color);
+            border-radius: 0 4px 4px 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .return-link:hover {
+            color: var(--hover-color);
+            background-color: #fff;
+        }
+
+        /* Galerie d'images additionnelles */
+        .img-fluid.rounded {
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Petits ajustements de texte */
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Lien pour revenir à l'accueil ou au portfolio -->
+<a href="\untitled2\index.php" class="return-link">Voir le site / Retour</a>
+
+<div class="container py-5">
+    <!-- Section principale : image et description -->
+    <div class="project-section">
+        <!-- Image à gauche -->
+        <div class="image-side col-lg-5 col-md-6 col-12 p-0">
+            <img src="\Images\Screenshot 2025-02-26 234710.png" alt="Techday Image 1" class="img-fluid">
+        </div>
+
+        <!-- Contenu à droite -->
+        <div class="desc-side col-lg-6 col-md-6 col-12 p-4">
+            <h2 class="section-title">Le Projet</h2>
+            <p>
+                Le <strong>Techday</strong> est une journée semestrielle où les étudiants présentent leurs projets
+                devant un jury de professionnels. Chaque équipe met en valeur le travail effectué pendant tout le semestre :
+                conception, développement, tests et préparation de la démonstration.
+            </p>
+            <p>
+                J’ai eu l’opportunité de participer à trois éditions différentes, avec chaque fois une nouvelle équipe
+                et un nouveau projet. Nous avons remporté la <strong>première place</strong> à chacune de ces trois éditions,
+                faisant de moi la seule personne actuellement à l’école à avoir 100% de première place au Techday.
+            </p>
+            <div class="services-list">
+                <span>Gestion de projet</span>
+                <span>Collaboration</span>
+                <span>Innovation</span>
+                <span>Présentation orale</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galerie additionnelle : deux images -->
+    <div class="row g-4 mb-5 mt-4">
+        <div class="col-md-6">
+            <img src="\Images\ded47247-7190-426b-8c4a-7fab9d0774ab.png" alt="Techday Screenshot 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <img src="\Images\Screenshot 2025-02-26 235250.png" alt="Techday Screenshot 3" class="img-fluid rounded">
+        </div>
+    </div>
+
+    <!-- Accompagnement et historique du projet -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="section-title">Déroulement & Points Forts</h2>
+            <p>
+                Chaque Techday se déroulait selon un format similaire : après plusieurs semaines de travail
+                en équipe, nous présentions le projet devant un jury composé de professeurs et de professionnels.
+                Les critères d’évaluation incluaient la qualité technique, l’originalité de la solution, la solidité
+                du travail en équipe et la clarté de la présentation.
+            </p>
+            <p>
+                Pour chacun des projets, j’ai intégré une équipe différente et j’ai su m’adapter à leurs méthodes
+                de travail, aux nouveaux enjeux techniques et aux défis de planification. Cette flexibilité et
+                cette capacité à collaborer efficacement ont largement contribué aux succès obtenus.
+            </p>
+
+            <h2 class="section-title mt-4">Un Avenir Professionnel</h2>
+            <p>
+                Au-delà des récompenses, ces trois victoires consécutives au Techday illustrent
+                ma volonté de repousser les limites et de faire la différence. Ces expériences m’ont
+                permis de développer mes compétences en management de projet, en communication et en résolution
+                de problèmes concrets, le tout dans un contexte de travail d’équipe sous contrainte de temps.
+            </p>
+            <p>
+                À travers ces projets, j’ai également affiné mes compétences techniques
+                (développement web, programmation objet, bases de données, etc.) pour apporter des solutions
+                pertinentes et originales devant un jury exigeant.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
